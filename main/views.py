@@ -16,7 +16,7 @@ def download(request):
     obj = About.objects.get(id=1)
     filename = obj.cv.path
     response = FileResponse(open(filename, 'rb'))
-    return response
+    return response 
     
 
 def func_404(request, exception):

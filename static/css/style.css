@@ -666,8 +666,8 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item {
-    flex:  0 0 33.3%;
-    width: 33.3%;
+    flex:  0 0 50%;
+    width: 50%;
     margin-bottom: 30px;
 }
 

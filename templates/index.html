@@ -292,16 +292,20 @@
                         </div>
                     </div>
                     <div class="row">
+                        {% for project in projects %}
                         <!-- portfolio item start -->
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="img/first.jpeg" alt="">
-                                </div>
+                               <a href="{{project.url}}" target="_blank">  
+                                    <div class="portfolio-img">
+                                        <img src="{{ project.image.url }}" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </div>
+                        {% endfor %}
                         <!-- portfolio item end -->
-                        <!-- portfolio item start -->
+                        {% comment %} <!-- portfolio item start -->
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
@@ -345,7 +349,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- portfolio item end -->
+                        <!-- portfolio item end --> {% endcomment %}
                     </div>
                 </div>
             </section>
